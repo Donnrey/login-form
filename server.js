@@ -12,10 +12,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'index.html'));
 });
-app.get('/about', function(req, res){
+app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'registration.html'));
 });
-app.get('/about', function(req, res){
+app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'Edit User profile.html'));
 });
 
